@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/1.css">
+</head>
+<body>
+	<div class="homepage">
+		<div class="index">
+			
+		<form action="1.php" >
+			<h2>用户诊断</h2>
+			<label for="name">企业名称</label>
+			<input type="text" id="companyName" placeholder="请输入企业名称">
+
+			<label for="fname">&emsp;&emsp;&emsp;客单价 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;转化率&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;流量&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;销售额</label><br>
+                <input type="text" id="txtFirst" placeholder="请输入商品客单价"> *
+
+                <input type="text" id="txtSecond" placeholder="输入商品转化率(小数)"> * 
+
+                <input type="text" id="txtThird" placeholder="请输入商品流量"> = 
+
+                <input type="text" id="txtForth" readonly>
+
+              
+                 <input type="button" id="caculate" value="计算"><br>
+                 
+        <h2>店铺Top榜单</h2>
+        <table id="datalist"></table>
+
+        <input type="button" id="name" value="查询">
+        <input type="button" id="price" value="客单价排序">
+        <input type="button" id="turn" value="转化率排序">
+
+        <input type="button" id="diagose" value="诊断"><br>
+
+            <label><h3>诊断结果</h3></label><br>
+            <textarea id="resultTxt" readonly></textarea>
+        </label>
+    
+		
+
+		
+		
+	</div>
+</body>
+</html>
+<script src="js/data.js"></script>
+<script src="js/1.js"></script>
+
