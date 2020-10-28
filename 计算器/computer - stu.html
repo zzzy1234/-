@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title>JS函数与代码——网页复杂计算器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="page-container" id="computer">
+        <h1>JS函数与代码——基于表单的计算器</h1>
+        <form>
+            <input type="text" id="txtFirst" class="username">
+            <input type="text" id="txtSecond" class="username">
+            <input type="button" value="加" onclick="operation('+')">&nbsp;
+            <input type="button" value="乘" onclick="operation('*')" />&nbsp;
+            <input type="button" value="除" onclick="operation('/')" />&nbsp;
+            <input type="button" value="比较" onclick="operation('rather')" />&nbsp;
+            <input type="button" value="幂"  onclick="operation('^')" />
+            <!-- <input type="button" value="加" onclick="sum()">&nbsp;
+            <input type="button" value="乘" onclick="multiply()" />&nbsp;
+            <input type="button" value="除" onclick="divide()" />&nbsp;
+            <input type="button" value="比较" onclick="rather()" />&nbsp;
+            <input type="button" value="幂"  onclick="power()" />  --> 
+
+            <input type="text" id="txtResult" class="result" readonly="true">
+
+            <br><br>
+            <div>
+                <label onmouseover="show(this)" onmouseout="hide(this)">这里有彩蛋</label>
+                 <div class="QRcode hide" id="QRcode" >                 	
+                    <img src="images/QRcode.jpg" alt="" width="300px"/>
+                    扫码关注公众号
+                </div>
+            </div>           
+
+        </form>
+    </div>
+
+</body>
+
+</html>
+<script src="js/1.js"></script>
